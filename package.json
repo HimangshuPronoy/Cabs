@@ -1,0 +1,8 @@
+{
+  "name": "buffalo-canada-airport-taxi",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "cd html && python3 -m http.server 8000"
+  },
+  "description": "Production-ready website for Buffalo Canada Airport Taxi"
+}

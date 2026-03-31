@@ -306,29 +306,47 @@
 
 /* Fix for About Us layout on mobile */
 @media (max-width: 768px) {
+    /* Keep the about image block as a relative container so the car can overlay the photo */
     .about-img {
         display: block !important;
         text-align: center;
-        margin-bottom: 50px;
-        position: relative;
+        margin-bottom: 60px;
+        position: relative !important;
     }
-    .about-img .about-img1, 
-    .about-img .about-img2 {
+    /* Photo fills the container as a block */
+    .about-img .about-img1 {
         position: relative !important;
         transform: none !important;
         max-width: 100% !important;
-        margin: 0 auto 20px auto;
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
         display: block;
+        border-radius: 8px;
         right: auto !important;
         left: auto !important;
         bottom: auto !important;
+        z-index: 1;
+    }
+    /* Car stays as an absolute overlay on the photo so the dark photo background
+       makes the gray silhouette clearly visible — mirrors the desktop effect */
+    .about-img .about-img2 {
+        display: block !important;
+        position: absolute !important;
+        max-width: 150px !important;
+        width: 150px;
+        bottom: -30px !important;
+        right: 10px !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
         z-index: 5;
     }
     .about-img:before {
-        display: none; /* Hide confusing backgrounds on mobile */
+        display: none;
     }
     .round-text {
-        display: none; /* Hide circular badge to prevent overlap */
+        display: none;
     }
     .about-info {
         display: flex !important;
@@ -340,5 +358,13 @@
         margin-bottom: 20px;
         width: 100%;
         justify-content: center;
+    }
+    /* Team cards using car-1.png as placeholder photos need a dark background
+       so the gray silhouette doesn't vanish on the white card */
+    .team-item img[src*="car-1.png"] {
+        background-color: #1a1a1a;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        object-fit: contain !important;
     }
 }

@@ -1,3 +1,9 @@
 {
-  "outputDirectory": "html"
+  "outputDirectory": "html",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/tos", "destination": "/terms-and-conditions.html" },
+    { "source": "/terms", "destination": "/terms-and-conditions.html" },
+    { "source": "/terms-of-service", "destination": "/terms-and-conditions.html" }
+  ]
 }

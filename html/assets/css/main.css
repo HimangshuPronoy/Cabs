@@ -406,6 +406,7 @@
     right: -30px;
     bottom: -30px;
     max-width: 230px;
+    z-index: 5;
     transition: all .3s cubic-bezier(.165, .85, .45, 1);
 }
 

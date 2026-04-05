@@ -1611,8 +1611,8 @@
 }
 
 /*=== 8.1 CTA Section 2 ===*/
-.cta-section-2{position:relative;z-index:1;overflow:hidden;padding:100px 0;}
-.cta-section-2:before{background-color:rgba(0,0,0,0.3);width:100%;height:100%;content:"";position:absolute;left:0;top:0;z-index:-1;}
+.cta-section-2{position:relative;z-index:1;overflow:hidden;padding:160px 0;min-height:500px;display:flex;align-items:center;background-color:#1a1a1a;}
+.cta-section-2:before{background-color:rgba(0,0,0,0.4);border-bottom: 2px solid #ff9900;width:100%;height:100%;content:"";position:absolute;left:0;top:0;z-index:-1;}
 .cta-video-bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-2;pointer-events:none;}
 .cta-section-2 .cta-men{background-size:400px auto;background-repeat:no-repeat;background-position:bottom right;width:100%;height:100%;position:absolute;right:20px;bottom:0px;z-index:1;pointer-events:none;}
 @keyframes ctaFloating {0%{transform:translateY(0px) rotate(0deg);}50%{transform:translateY(-15px) rotate(1deg);}100%{transform:translateY(0px) rotate(0deg);}}
@@ -2461,7 +2461,7 @@ textarea:-ms-input-placeholder {
     }
 }
 
-.bg-loaded .testimonial-section:before { background-image: url(../img/map.webp); }
-.bg-loaded .cta-section-2 .cta-men { background-image: url(../img/cta-man.webp); }
-.bg-loaded .download-section-2 { background-image: url(../img/plane-in-sky.webp); }
-.bg-loaded .footer-mid-wrap:before { background-image: url(../img/city-skiline.webp); }
+.testimonial-section:before { background-image: url(../img/map.webp); }
+.cta-section-2 .cta-men { background-image: url(../img/cta-man.webp); }
+.download-section-2 { background-image: url(../img/plane-in-sky.webp); }
+.footer-mid-wrap:before { background-image: url(../img/city-skiline.webp); }

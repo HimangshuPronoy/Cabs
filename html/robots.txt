@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://buffalo-canada-airporttaxi.com/sitemap.xml

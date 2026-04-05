@@ -2461,7 +2461,7 @@ textarea:-ms-input-placeholder {
     }
 }
 
-.testimonial-section:before { background-image: url(../img/map.webp); }
-.cta-section-2 .cta-men { background-image: url(../img/cta-man.webp); }
-.download-section-2 { background-image: url(../img/plane-in-sky.webp); }
-.footer-mid-wrap:before { background-image: url(../img/city-skiline.webp); }
+.testimonial-section:before { background-image: url(../img/map.png); }
+.cta-section-2 .cta-men { background-image: url(../img/cta-man.png); }
+.download-section-2 { background-image: url(../img/plane-in-sky.jpg); }
+.footer-mid-wrap:before { background-image: url(../img/city-skiline.png); }

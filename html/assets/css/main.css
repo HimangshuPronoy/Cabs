@@ -1611,74 +1611,13 @@
 }
 
 /*=== 8.1 CTA Section 2 ===*/
-.cta-section-2 {
-    position: relative;
-    z-index: 1;
-}
-
-.cta-section-2:before {
-    background-color: #ff9900;
-    width: 100%;
-    height: 100%;
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -2;
-}
-
-.cta-section-2 .cta-content h4 {
-    text-transform: uppercase;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
-.cta-section-2 .cta-content h2 {
-    margin: 0;
-    font-size: 36px;
-    line-height: 42px;
-}
-
-.cta-section-2 .cta-content .default-btn {
-    background-color: #222;
-    margin-top: 20px;
-}
-
-.cta-section-2 .cta-content .default-btn:hover {
-    color: #222;
-}
-
-.cta-section-2 .cta-content .default-btn:after,
-.cta-section-2 .cta-content .default-btn:before {
-    background-color: #fff;
-}
-
-.cta-section-2 .check-list i {
-    background-color: #222;
-    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
-    font-size: 12px;
-    color: #ff9900;
-    width: 30px;
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-}
-
-.cta-section-2 .check-list li {
-    color: #fff;
-}
-
-.cta-section-2 .check-list li:not(:last-of-type) {
-    margin-bottom: 10px;
-}
-
-.cta-section-2 .cta-men {
-    background-size: 95%;
-    right: 90px;
-    bottom: 0;
-    width: 500px;
-    height: 420px;
-}
+.cta-section-2{position:relative;z-index:1;overflow:hidden;padding:100px 0;}
+.cta-section-2:before{background-color:rgba(0,0,0,0.3);width:100%;height:100%;content:"";position:absolute;left:0;top:0;z-index:-1;}
+.cta-video-bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-2;pointer-events:none;}
+.cta-section-2 .cta-men{background-size:400px auto;background-repeat:no-repeat;background-position:bottom right;width:100%;height:100%;position:absolute;right:20px;bottom:0px;z-index:1;pointer-events:none;}
+@keyframes ctaFloating {0%{transform:translateY(0px) rotate(0deg);}50%{transform:translateY(-15px) rotate(1deg);}100%{transform:translateY(0px) rotate(0deg);}}
+@media (max-width:1200px){.cta-section-2 .cta-men{background-size:350px auto;right:0px;}}
+@media (max-width:992px){.cta-section-2 .cta-men{display:block;position:relative;background-position:center;background-size:contain;height:350px;right:0;bottom:0;margin-top:40px;}.cta-section-2{padding:80px 0 40px;}.running-taxi{display:none!important;}.dl-cursor{display:none!important;}}
 
 @media (min-width: 993px) and (max-width: 1200px) {
     .cta-men {
@@ -2521,3 +2460,8 @@ textarea:-ms-input-placeholder {
         font-size: 36px !important;
     }
 }
+
+.bg-loaded .testimonial-section:before { background-image: url(../img/map.webp); }
+.bg-loaded .cta-section-2 .cta-men { background-image: url(../img/cta-man.webp); }
+.bg-loaded .download-section-2 { background-image: url(../img/plane-in-sky.webp); }
+.bg-loaded .footer-mid-wrap:before { background-image: url(../img/city-skiline.webp); }
